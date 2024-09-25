@@ -9,7 +9,7 @@ COPY app/package*.json ./
 RUN npm install
 
 # Copy the app code
-COPY app/. .  # Copy all files in the 'app' directory
+COPY app/. .
 
 # Expose the port the app will run on
 EXPOSE 8080
