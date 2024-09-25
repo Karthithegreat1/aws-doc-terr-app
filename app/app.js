@@ -6,6 +6,6 @@ app.get('/', (req, res) => {
   res.send('Hello from Dockerized App on AWS!');
 });
 
-app.listen(port, () => {
-  console.log('App running on port ${port}');
+app.listen(port, '0.0.0.0', () => {
+    console.log(`App running on port ${port}`);
 });
